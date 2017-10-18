@@ -5,6 +5,9 @@
   <artifactId>online-shopping</artifactId>
   <packaging>war</packaging>
   <version>1.0-SNAPSHOT</version>
+  <modules>
+    <module>../../projects1/shoppingbackend</module>
+  </modules>
   <name>online-shopping Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <properties>
@@ -12,6 +15,13 @@
     <spring-version>4.3.6.RELEASE</spring-version>
   </properties>
   <dependencies>
+
+    <!-- Link Backend project -->
+    <dependency>
+      <groupId>org.spring</groupId>
+      <artifactId>shoppingbackend</artifactId>
+      <version>1.0-SNAPSHOT</version>
+    </dependency>
 
     <!-- JAVA EE API -->
     <dependency>
